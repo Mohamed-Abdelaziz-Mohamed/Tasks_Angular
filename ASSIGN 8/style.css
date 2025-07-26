@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    background-color: white;
+    text-align: center;
+    color: black;
+  }
+  
+  .team-section {
+    padding: 40px;
+  }
+  
+  .team-section h2 {
+    font-size: 32px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .desc {
+    color: gray;
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding-top: 30px;
+
+    
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0 0 10px gold;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transition: transform 0.3s ease, background-color 0.3s ease; */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    object-fit:cover;
+  }
+  
+  .card h3 {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    color: dimgray;
+    font-size: 14px;
+  }
+  
+  /* .card:hover {
+    transform: scale(1.05);
+    background-color: lightgray;
+    cursor: pointer;
+  } */
+  .card img:hover {
+    transform: scale(1.05);
+    background-color: red;
+    cursor: pointer;
+  }
+  .card h3:hover {
+    color: red;
+  }
+
+  @media screen and (max-width: 991px) {
+    .cards {
+      justify-content: space-around;
+    }
+  
+    .card {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  .team-section h2::before{
+    content: "O";
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;    
+    opacity: 0.09;  
+  }
+
+  .team-section h2::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: greenyellow;
+    top: 120%;
+    transition: all .5s;
+  }
+
+  .team-section h2:hover::after{
+    width: 120px ;
+  }
