@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+/* Top Bar */
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+#top-bar a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar */
+#main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.7;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.reserve-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reserve-btn:hover {
+    background-color: darkorange;
+}
+
+/* Awards Section */
+#awards {
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Specials Section */
+#specials {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.box {
+    flex: 1;
+    margin: 0 8px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.about-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.about-btn:hover {
+    background-color: gray;
+}
+
+/* Food Grid */
+#food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    padding: 20px;
+}
+
+#food-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: lavender;
+    padding: 20px;
+    text-align: center;
+}
+
+.review {
+    margin-top: 16px;
+}
+
+.review blockquote {
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.review cite {
+    font-weight: bold;
+}
+
+/* Chef Specials */
+#chef-specials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+#chef-specials .special-box {
+    text-align: center;
+    position: relative;
+}
+
+#chef-specials .special-box img {
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+#chef-specials .special-box img:hover {
+    transform:scale(1.1);
+}
+
+
+#chef-specials .special-box .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#chef-specials .special-box h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#chef-specials .special-box .price {
+    color: orange;
+    font-weight: bold;
+}
+
+#chef-specials .special-box p {
+    color: gray;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Booking Section */
+#booking {
+    background-image: url('/Mia/imgi_28_book.webp');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: left;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.booking-overlay {
+    max-width: 600px;
+}
+
+#booking h4 {
+    color: orange;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#booking p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.book-now-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* Subscribe Section */
+#subscribe {
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+}
+
+#subscribe input[type="email"] {
+    padding: 6px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 6px;
+}
+
+#subscribe button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#subscribe button:hover {
+    background-color: lightgray;
+}
+footer {
+    background-color: #a35400;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    gap: 1px;
+    justify-items: center;
+    transform: translateX(90px);
+}
+
+.instagram-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.footer-icon {
+    margin-right: 6px;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: lightslategray;
+}
