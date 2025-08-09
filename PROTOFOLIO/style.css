@@ -1,0 +1,134 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('/1.png') center/cover no-repeat fixed;
+    height: 100vh;
+}
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(black, 0.5); 
+}
+.hero-section h1, 
+.hero-section p {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 5px rgba(black, 0.7); 
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: bold;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: royalblue; 
+}
+/* About Section */
+/* About Section Card */
+.about-section .card {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+}
+
+/* About Title */
+.about-title {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+.about-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: royalblue; /* primary blue */
+}
+
+/* Skill Items */
+.skill-item span {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.progress {
+    height: 8px;
+    background-color: lightgray; 
+    border-radius: 4px;
+}
+.progress-bar {
+    background-color: royalblue; /* primary blue */
+}
+
+/* Services */
+.service-box {
+    border: 1px solid whitesmoke; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(black, 0.1); 
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background: url('/imgi_14_overlay-bg.jpg') center/cover no-repeat fixed;
+    position: relative;
+}
+
+.portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(black, 0.5); 
+}
+
+.portfolio-image {
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+    background: url('/imgi_14_overlay-bg.jpg') center/cover no-repeat fixed;
+    position: relative;
+}
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(black, 0.4); 
+}
+.contact-section > * {
+    position: relative;
+    z-index: 1;
+}
